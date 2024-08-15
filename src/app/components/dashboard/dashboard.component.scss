@@ -1,0 +1,53 @@
+@import '../../styles/variables';
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+
+  &__header {
+    background-color: $background-color; 
+    padding: $spacing-medium;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 2; // Garante que o cabeçalho fique acima do conteúdo ao rolar
+  }
+
+  &__content {
+    flex: 1 0 auto; 
+    padding: $spacing-medium;
+    overflow-y: auto; // Permite que apenas esta seção seja rolada
+  }
+
+  &__title {
+    margin: 0; // Remove a margem inferior do título
+    font-size: $heading-font-size;
+    color: $text-color;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-medium;
+    align-items: center; // Centraliza os botões horizontalmente
+    margin-top: $spacing-large; // Adiciona espaço acima dos botões
+
+    button {
+      width: 100%;
+      max-width: 300px; 
+    }
+  }
+
+  &__footer {
+    flex-shrink: 0; 
+    padding: $spacing-medium;
+    text-align: center; 
+    border-top: 1px solid #ccc; 
+    width: 100%; 
+    position: sticky;
+    bottom: 0;
+    z-index: 1; // Garante que o rodapé fique acima do conteúdo ao rolar
+    background-color: $background-color; 
+  }
+}

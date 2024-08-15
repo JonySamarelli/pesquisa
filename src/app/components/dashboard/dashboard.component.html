@@ -1,0 +1,24 @@
+<div class="dashboard">
+    <div class="dashboard__header">
+      <h1 class="dashboard__title">Globo + Você</h1>
+    </div>
+  
+    <div class="dashboard__content"> 
+      <div class="dashboard__actions">
+        <button mat-raised-button color="primary" routerLink="/polls">
+          Ver Minhas Enquetes
+        </button>
+  
+        <button mat-raised-button color="accent" routerLink="/pending-approvals">
+          Aprovações Pendentes
+        </button>
+      </div>
+    </div>
+  
+    <div class="dashboard__footer">
+      <button mat-raised-button color="primary" (click)="onCreatePoll()">
+        Criar Nova Enquete
+      </button>
+    </div>
+  </div>
+  

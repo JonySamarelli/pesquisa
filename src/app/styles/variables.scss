@@ -1,0 +1,27 @@
+$primary-color: #0063ab; // Azul Globo
+$secondary-color: #f47a20; // Laranja YouCast
+$accent-color: #92d050; // Verde (opcional, para destacar elementos)
+$background-color: #ffffff; // Branco
+$text-color: #333333; // Cinza escuro
+
+$sucess-color: #4caf50; // Verde para sucesso
+$error-color: #f44336; // Vermelho para erros
+$warning-color: #ffeb3b; // Amarelo para alertas
+
+// Fontes
+$primary-font: 'Roboto', sans-serif; // Fonte moderna e legível
+$secondary-font: 'Arial', sans-serif; // Fonte alternativa
+
+// Tamanhos
+$font-size-base: 16px;
+$heading-font-size: 24px;
+
+// Espaçamentos
+$spacing-small: 8px;
+$spacing-medium: 16px;
+$spacing-large: 32px;
+
+// Breakpoints (opcional, para layouts responsivos)
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
